@@ -18,3 +18,27 @@ p {
 a:hover {
     background-color: gold;
 }
+
+.container {
+  display: grid;
+  grid-template:
+    "header header" /* row 1 */
+    "sidebar main"  /* row 2 */
+    "footer footer" /* row 3 */
+	/ 1fr 2fr;  /* column widths (1fr = one fraction) */
+  grid-gap: 10px;   /* (optional) space between areas */
+}
+
+/* assign your elements to the areas you defined in the grid-template rule: */
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: sidebar;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
