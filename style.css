@@ -42,3 +42,10 @@ main {
 footer {
     grid-area: footer;
 }
+
+h2 {
+    /* color: red; */
+    #like {
+        color: blue;
+    }
+}
