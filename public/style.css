@@ -1,9 +1,10 @@
 body {
-    background-color: lavender;
+    /* background-color: lavender; */
+    background-color: lightskyblue;
     font-family: Georgia, serif;
     /* list of font families: https://www.tutorialbrain.com/Css_tutorial/Css_font_family_list/ */
     /* list of special symbols to put in text: https://neocities.org/tutorial/html2/4 */
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     /*background: linear-gradient(lightskyblue, plum);*/
     /*min-height: 100vh;*/
@@ -18,18 +19,43 @@ p {
 a:hover {
     background-color: gold;
 }
-
-.container {
-  display: grid;
-  grid-template:
-    "header header" /* row 1 */
-    "sidebar main"  /* row 2 */
-    "footer footer" /* row 3 */
-	/ 1fr 2fr;  /* column widths (1fr = one fraction) */
-  grid-gap: 10px;   /* (optional) space between areas */
+hr {
+    border-style: solid;
+    border-color: black;
 }
 
-/* assign your elements to the areas you defined in the grid-template rule: */
+.navbar {
+    display: flex;
+    text-align: center;
+}
+
+.navbar > h3 {
+    margin: 15px;
+    text-align: center;
+    border-style: dashed;
+    /* border-top: #192e56; */
+    border-width: 2px;
+}
+
+.music-items {
+    display: flex;
+}
+
+.music-items > img {
+    margin-right: 12px;
+}
+
+/* .container {
+  display: grid;
+  grid-template:
+    "header header" /* row 1 
+    "sidebar main"  /* row 2 
+    "footer footer" /* row 3 
+	/ 1fr 2fr;  /* column widths (1fr = one fraction) 
+  grid-gap: 10px;   /* (optional) space between areas 
+}
+
+/* assign your elements to the areas you defined in the grid-template rule: 
 header {
     grid-area: header;
 }
@@ -41,7 +67,7 @@ main {
 }
 footer {
     grid-area: footer;
-}
+}*/
 
 h2 {
     /* color: red; */
